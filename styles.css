@@ -1,29 +1,162 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border-style: border-box;
+}
+
 body,
 html {
   height: 100%;
   width: 100%;
+  border-style: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black !important;
+  color: white !important;
+}
+
+#Main_Div h1 {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+#Card_Area {
+  height: 500px;
+  width: 330px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin: auto;
+  position: relative;
+}
+
+#DpShow {
+  background-color: rgba(0, 0, 0, 0.682);
+  z-index: 1000;
+  height: 97.5%;
+  width: 94.5%;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 1px;
+  margin-top: 5px;
+  display: none;
+}
+
+.Icard_top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.Icard_top-img img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  bottom: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.Icard_top-text h4 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.Icard_top-text p {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.hr {
+  position: relative;
+  bottom: 23px;
+}
+
+.Icard_body {
+  position: relative;
+  bottom: 25px;
+}
+
+.Like_Div {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 32.5%;
+  left: 34%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#Main {
+.Like_Div i {
+  font-size: 80px;
+  opacity: 0.85;
+  background: linear-gradient(45deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  scale: 0;
+  transition: 0.55s ease-in-out;
+}
+
+.OnLink {
+  opacity: 1;
+  background: linear-gradient(45deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Icard_body img {
+  height: 360px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.Icard_footer {
+  padding: 0px 10px;
+  position: relative;
+  bottom: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.Icard_footer i {
+  font-size: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.Icard_footer i span {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.Icard_footer span {
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.FullScreen {
   height: 200px;
   width: 200px;
-  background-color: blue;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.body {
-  position: absolute;
-  height: 50px;
-  width: 50px;
   border-radius: 50%;
-  background-color: red;
-  transform: scale(0);
-  opacity: .8;
-  transition: .5s ease-in-out;
+  object-fit: cover;
+  transform: translate(20%,60%);
 }
