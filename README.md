@@ -1,3 +1,5 @@
+#Instagram-Like-And-Profile-Image-Features
+
 🚀 Built an Instagram-Like Double-Tap ❤️ & Profile Photo Feature!
 🔥 What I Built
 I developed a smooth double-tap like effect & profile photo feature using HTML, CSS, and JavaScript! Inspired by Instagram, this interactive feature enhances user engagement by allowing likes through a simple double-tap, along with profile photo integration.
